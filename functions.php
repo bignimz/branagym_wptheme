@@ -7,6 +7,10 @@
 */
 
 
+// Link to Queries file
+require get_template_directory() . '/inc/queries.php';
+
+
 function branaeaglesgym_theme_scripts() {
 
   // Register the styles and scripts first

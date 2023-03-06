@@ -8,14 +8,18 @@
 
 get_header();
 ?>
+<!-- Hero slider -->
 <?php echo get_template_part('template-parts/hero-slider'); ?>
-<div class="container py-5 home-main">
-    <?php while(have_posts()) : the_post(); ?>
-    <h2><?php echo the_title(); ?></h2>
-    <p><?php echo the_content(); ?></p>
-    <?php endwhile; ?>
-    
-</div>
+<!-- Why Choose us -->
+<?php echo get_template_part('template-parts/why-choose-us'); ?>
 
+<!-- Classes  -->
+<?php echo get_template_part('template-parts/our-classes'); ?>
+
+<!-- Cta  -->
+<?php echo get_template_part('template-parts/cta'); ?>
+
+<!-- Pricing Plans -->
+<?php echo get_template_part('template-parts/price-list'); ?>
 
 <?php get_footer(); ?>

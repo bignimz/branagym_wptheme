@@ -13,6 +13,14 @@ body {
     position: relative;
 }
 
+.navbar-toggler {
+    border: 1px solid #fff;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
 
 /* Site Header */
 .site-header {
@@ -26,9 +34,9 @@ body {
     margin-bottom: 50px;
 }
 
-.logo {
-    z-index: 10;
-}
+/* .logo {
+    position: absolute;
+} */
 
 /* Menu CSS */
 .menu {
@@ -51,16 +59,18 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    padding-bottom: 20px;
     transition: all ease-in .3s;
 }
 
 .menu-item a:hover {
     color: rgb(33, 150, 205);
+    border-bottom: 2px solid #2196cd;
     transition: all ease-in .3s;
 }
 
 .current_page_item a {
-    color: rgb(33, 150, 205);
+    color: #2196cd;
 }
 
 /* Main */
@@ -95,8 +105,193 @@ main {
 }
 
 
+.classes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.class-card {
+    position: relative;
+}
+
+
+
+.class-title {
+    position: absolute;
+    top: 20px;
+    padding: 12px 20px;
+    background-color: #1B5480;
+    color: #fff;
+}
+
+.day {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.day-time {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    color: darkorange;   
+}
+
+/* Single Class */
+.class-class {
+    position: relative;
+}
+
+.class-content {
+    position: absolute;
+    top: 10%;
+    padding: 20px;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+}
+
+/* Before Footer */
+.before-footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.bf-blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons {
+    background-color: #2196cd;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons .fa {
+    font-size: 26px;
+}
+
+
 /* Footer */
 .footer {
     align-items: center;
 
+}
+
+
+/* ======= PAGES ======== */
+
+/* Home Page */
+.home-main {
+    padding: 70px 0px;
+}
+
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    color: #1B5480;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.choose-card {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #1B5480;
+    font-weight: 700;
+}
+
+.choose-icons i {
+    background-color: #1B5480;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.our_classes {
+    background-color: #e1e1e1;
+
+}
+
+.cta-section {
+    background: linear-gradient(rgba(0, 0, 1, .4), rgba(0, 0, 0, .5) ), url('../img/yoga.jpg');
+    color: #fff;
+    position: relative;
+    padding: 100px 0px;
+}
+
+
+.cta-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.cta-subtitle {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.cta-btn {
+    background-color: transparent;
+    border: 2px solid #2196cd;
+    outline: none;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: all ease-in .3s;
+}
+.cta-btn:hover {
+    color: #fff;
+    background-color: #2196cd;
+    transition: all ease-in .3s;
+}
+
+.price_list {
+    background-color: #151515;
+}
+
+.price-card {
+    border: 1px solid #f1f1f1;
+    padding: 80px 50px;
+    transition: all ease-in .3s;
+}
+
+.price-card:hover {
+    background-color: #f1f1f1;
+    color: #222;
+}
+
+.price-card:hover .cta-btn {
+    background-color: #2196cd;
+    color: #fff;
+}
+
+.price-amount {
+    color: #2196cd;
+    font-weight: 800;
 }

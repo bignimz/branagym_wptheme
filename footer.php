@@ -1,3 +1,4 @@
+    <?php echo get_template_part('template-parts/before-footer'); ?>
     <footer class="bg-dark text-light py-3">
         <div class="container footer-container text-center">
 
